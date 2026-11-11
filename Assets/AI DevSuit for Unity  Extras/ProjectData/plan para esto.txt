@@ -1,0 +1,119 @@
+Camino simple y útil
+Etapa 1 — super fácil
+
+Hacés:
+
+project_tree.txt
+project_index.json
+Etapa 2 — búsqueda por texto
+
+Buscás en:
+
+path
+clases
+métodos
+contenido
+
+y devolvés top archivos relevantes.
+
+Etapa 3 — bundle para la IA
+
+Armás un paquete con:
+
+pedido del usuario
+árbol resumido
+índice resumido
+contenido completo de 2 a 6 scripts
+
+Eso ya te da un sistema multiarchivo muy decente.
+
+
+********************************************************
+
+La receta que más rinde
+
+Para acercarte a algo tipo Cursor, haría esto:
+
+Nivel 1: árbol del proyecto
+
+Muy útil. Le da al modelo un mapa general.
+
+Nivel 2: índice por archivo
+
+Por cada archivo, guardás:
+
+path
+tipo
+namespace
+clases
+métodos principales
+pequeño resumen
+Nivel 3: retrieval
+
+Cuando el usuario pide algo, primero buscás:
+
+nombres de clases
+métodos
+keywords
+similitud semántica
+
+y recién ahí mandás al modelo los archivos relevantes.
+
+Nivel 4: edición multiarchivo
+
+El modelo recibe:
+
+pedido del usuario
+árbol
+índice
+scripts implicados completos
+errores/logs
+
+Con eso ya puede proponer cambios coordinados en varios archivos.
+
+
+**********************************************
+
+LOS DOS SCRIPTS ESTOS GENERAN LO QUE NECESITAMOS PARA TENER CONTEXTO
+PARA SOLUCION /REFACTOR DE MULTIPLS SCRIPST CON ESTAS DOS METODOS LES VAMOS A PODER PASAR UN CONTEXTO DEL PROYECTO ADEMÁS DE QUE CONTIENE QUE CLASES Y COSAS CONTIENE 
+CADA SCRIPT, LA IDEA ES IR LLEVANDO ESTO APRA EL LADO DE MANDAR UN PROMP MAS ACOTADO SOLO A LO QUE SE MODIFICA EN EL PLAN DE MODIFICACION
+
+
+
+EJEMPLO SALIDA DE ESTRUCTURA DEL PRYECTO
+project_tree.txt
+
+Algo así:
+
+MiProyecto/
+  Assets/
+    UnityVibeCodingPlugin/
+      Runtime/
+        OpenAiManager.cs
+      Editor/
+        Graphic/
+          CharacterAnimationWindow.cs
+  Packages/
+  ProjectSettings/
+
+
+  EJEMPLO SALIDA DE CONTENIDO DE SCRIPST (BUSCA TODOS LOS CS Y TIENE UN INDICE DE CLASES Y ESAS COSASS)
+project_index.json
+
+Algo así:
+
+{
+  "files": [
+    {
+      "path": "Assets/UnityVibeCodingPlugin/Runtime/OpenAiManager.cs",
+      "fileName": "OpenAiManager.cs",
+      "namespaceName": "",
+      "classes": ["OpenAiManager"],
+      "methods": [
+        "GenerateImageFromPrompt",
+        "GenerateImageFromPromptAndReference"
+      ],
+      "summary": "Contains class OpenAiManager. Methods: GenerateImageFromPrompt, GenerateImageFromPromptAndReference."
+    }
+  ]
+}

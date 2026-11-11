@@ -1,0 +1,62 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Local backups
+[Bb]ackup/
+
+# IDE and editor files
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+UpgradeLog*.htm
+
+# Unity and operating-system noise
+*.tmp
+*.bak
+*.orig
+*.log
+*.stackdump
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Builds and packages
+*.apk
+*.aab
+*.unitypackage
+
+# Crash reports
+sysinfo.txt
+
+# Local secrets and environment files
+.env
+.env.*
+*.keystore
+*.jks
+*.p12
+*.pem
+*apikey*.txt
+*api_key*.txt
+*secret*.txt
+credentials.json
+service-account*.json

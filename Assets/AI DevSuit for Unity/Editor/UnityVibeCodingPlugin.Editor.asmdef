@@ -1,0 +1,16 @@
+{
+    "name": "UnityVibeCodingPlugin.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ac8164ad646ff5244b9a96346b27e3f9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

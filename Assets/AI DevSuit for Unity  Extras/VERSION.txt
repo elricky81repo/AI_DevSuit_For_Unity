@@ -1,0 +1,5 @@
+1.0.0 ULTIMO CAMBIO REALIZADO (10/4/2026) 18HS
+
+probado andando en unity 2022.3.62f3 (LTZ)
+Apuntado a esa version o superiores
+
